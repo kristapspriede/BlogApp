@@ -1,4 +1,5 @@
 ﻿using BlogApp.Domain.Entities.Abstract;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BlogApp.Domain.Entities
 {
@@ -9,7 +10,6 @@ namespace BlogApp.Domain.Entities
         public string EmailAddress { get; set; }
         public string Password { get; set; }
 
-        public int BlogId { get; set; }
-        public virtual Blog Blog { get; set; }
+        public ICollection<Blog> Blogs { get; set; }
     }
 }

@@ -9,6 +9,6 @@ namespace BlogApp.Domain.Entities.Abstract
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public DateTime DateCreated { get; set; }
-        public DateTime Modified { get; set; }
+        public DateTime? Modified { get; set; }
     }
 }
